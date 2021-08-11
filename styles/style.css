@@ -280,14 +280,17 @@ width: 877px;
     color: white;
     overflow: hidden;
     min-height: 350px;
+   
 
 }
 .footer__columns {
     width: 90%;
     margin: 60px auto 40px auto;
     display: grid;
-    grid-template-columns: 50% 1fr 128px 1fr 128px;
+    grid-template-columns: 50%  128px 128px;
 grid-template-rows: 60% 40%;
+grid-column-gap: 232px;
+
     
 }
 
@@ -348,14 +351,15 @@ bottom: 0;
 .content_social {
     align-content: flex-end;
 }
-.content_info {
-grid-column: 3/4;
-}
-.content_social {
-    grid-column: 5/6;
-}
-
 .link_color {
     color:white;
     text-decoration: none;
+}
+.content_info {
+    grid-column: 2/3;
+    
+}
+.content_social {
+    grid-column: 3/4;
+    
 }

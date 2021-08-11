@@ -13,13 +13,19 @@
     <div class="page">
 
         <header class="header">
-            <div class="header__logo header__place_logo" href="#"> </div>
+            <!-- ! Не правильно применен БЭМ-->
+            <!-- * Для таких случаев
+            * используют модификаторы вида "ключ-значение". Их записывают таким
+            *образом: block__element_key_value. Но можно применять и для блока
+            *logo_place_header -->
+            <!-- TODO т.е. должно получиться header_logo - Блок__Элемент + Блок_Элемент_модификатор (header__logo_place_logo)  -->
+            <div class="header__logo header__place_logo" href="#"></div>
             <h1 class="header__title">Научиться учиться</h1>
             <p class="header__subtitle">Какие современные и эффективные подходы к обучению вы можете использовать в
                 своей жизни? <a class="header__link" href="#">Узнать →</a></p>
             <div class="header__square-pic"></div>
             <div class="header__main-illustration"></div>
-
+                <!-- ! лишний пробел -->
         </header>
 
         <main class="content">
@@ -43,11 +49,16 @@
             </section>
 
             <section class="digits">
+                <!-- ? Для справки, можно объединить два блока снизу одним дивом чтобы позиционировать их вместе
+                    ? они всегда будут позиционироваться вместе -->
                 <h1 class="section-title">Цифры и факты</h1>
                 <h2 class="section-subtitle">Про учебу и мозг</h2>
+                <!-- ? -->
                 <div class="table">
                     <div class="table__cell">
+                        <!-- ! Страдает БЭМ отсюда и по списку ниже, блок table элемент heading -->
                         <p class="heading">86 миллиардов</p>
+                        <!-- ! блок table элемент text -->
                         <p class="text">Число нейронов в мозге человека</p>
                     </div>
                     <div class="table__cell">
@@ -87,18 +98,23 @@
             <section class="feinman">
                 <h1 class="feinman__title">Метод Фейнмана</h1>
                 <h2 class="feinman__subtitle">Выучить и не забыть.</h2>
+                <!-- ! Заменить стрелку на &#10230; это HTML код стрелки, все символы можно загуглить "html символы" -->
                 <a class="feinman__link" href="#">Подробнее →</a>
             </section>
 
             <section class="kaufman">
+                <!-- ! Страдает БЭМ, не правильное применение модификатора, должно быть Б__Э Б__Э_М или Б Б_М -->
                 <h1 class="section-title__theme_dark">Принципы обучения</h1>
                 <h2 class="section-subtitle__theme_dark">от Джоша Кауфмана</h2>
                 <div class="table__theme_dark">
                     <div class="table__cell_dark">
+                        <!-- ! Потерялся Блок, сейчас есть только __Э_м -->
                         <p class="heading_dark">1</p>
+                        <!-- ! Потерялся Блок, сейчас есть только __Э_м -->
                         <p class="text_dark">Выберите привлекательный проект.</p>
                     </div>
                     <div class="table__cell_dark">
+                        <!-- ! Потерялся Блок, сейчас есть только __Э_м и по списку дальше-->
                         <p class="heading_dark">2</p>
                         <p class="text_dark">Сосредоточьтесь на каком-то одном навыке.</p>
                     </div>
@@ -147,6 +163,7 @@
                 <div class="footer__column content_info">
                     <p class="footer__column-heading">О Практикуме</p>
                     <p class="footer__column-links">
+                        <!-- ! сломался БЭМ -->
                     <ul class="ul">
                         <a class="link_color" href="#">
                             <li class="li_alt li">Главная</li>
@@ -163,6 +180,7 @@
                 <div class="footer__column content_social">
                     <p class="footer__column-heading">Соцсети</p>
                     <p class="footer__column-social-icons">
+                        <!-- ! сломался БЭМ -->
                     <ul class="ul_social">
                         <a class="link_color" href="facebook.com">
                             <li class="li_alt li_fb">Facebook</li></a>
@@ -175,7 +193,7 @@
                     </ul>
                     </p>
                 </div>
-
+                <!-- ! Лишние пробелы -->
 
             </div>
         </footer>
