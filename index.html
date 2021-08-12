@@ -13,19 +13,12 @@
     <div class="page">
 
         <header class="header">
-            <!-- ! Не правильно применен БЭМ-->
-            <!-- * Для таких случаев
-            * используют модификаторы вида "ключ-значение". Их записывают таким
-            *образом: block__element_key_value. Но можно применять и для блока
-            *logo_place_header -->
-            <!-- TODO т.е. должно получиться header_logo - Блок__Элемент + Блок_Элемент_модификатор (header__logo_place_logo)  -->
-            <div class="header__logo header__place_logo" href="#"></div>
+            <div class="logo logo_place_header" href="#"></div>
             <h1 class="header__title">Научиться учиться</h1>
             <p class="header__subtitle">Какие современные и эффективные подходы к обучению вы можете использовать в
                 своей жизни? <a class="header__link" href="#">Узнать →</a></p>
             <div class="header__square-pic"></div>
             <div class="header__main-illustration"></div>
-                <!-- ! лишний пробел -->
         </header>
 
         <main class="content">
@@ -49,48 +42,43 @@
             </section>
 
             <section class="digits">
-                <!-- ? Для справки, можно объединить два блока снизу одним дивом чтобы позиционировать их вместе
-                    ? они всегда будут позиционироваться вместе -->
-                <h1 class="section-title">Цифры и факты</h1>
-                <h2 class="section-subtitle">Про учебу и мозг</h2>
-                <!-- ? -->
-                <div class="table">
+                <h1 class="section-title section-title_theme_light">Цифры и факты</h1>
+                <h2 class="section-subtitle section-subtitle_theme_light">Про учебу и мозг</h2>
+                <div class="table table_theme_light">
                     <div class="table__cell">
-                        <!-- ! Страдает БЭМ отсюда и по списку ниже, блок table элемент heading -->
-                        <p class="heading">86 миллиардов</p>
-                        <!-- ! блок table элемент text -->
-                        <p class="text">Число нейронов в мозге человека</p>
+                        <p class="table__heading">86 миллиардов</p>
+                        <p class="table__text">Число нейронов в мозге человека</p>
                     </div>
                     <div class="table__cell">
-                        <p class="heading">2,1 миллиарда</p>
-                        <p class="text">Число нуждающихся в повышении квалификации</p>
-                        <p class="text subtext">Всемирный банк, 2017</p>
+                        <p class="table__heading">2,1 миллиарда</p>
+                        <p class="table__text">Число нуждающихся в повышении квалификации</p>
+                        <p class="table__text table__text_subtext">Всемирный банк, 2017</p>
                     </div>
                     <div class="table__cell">
-                        <p class="heading">1000 терабайт</p>
-                        <p class="text">Объем памяти человека</p>
+                        <p class="table__heading">1000 терабайт</p>
+                        <p class="table__text">Объем памяти человека</p>
                     </div>
                     <div class="table__cell">
-                        <p class="heading">500 триллионов</p>
-                        <p class="text">Число ответственных за обучение нервных синапсов у взрослого человека</p>
+                        <p class="table__heading">500 триллионов</p>
+                        <p class="table__text">Число ответственных за обучение нервных синапсов у взрослого человека</p>
                     </div>
                     <div class="table__cell">
-                        <p class="heading">420 миллионов</p>
-                        <p class="text">Число взрослых людей моложе 25 лет, не имеющих образования для трудоустройства
+                        <p class="table__heading">420 миллионов</p>
+                        <p class="table__text">Число взрослых людей моложе 25 лет, не имеющих образования для трудоустройства
                         </p>
-                        <p class="text subtext">Всемирный банк, 2017</p>
+                        <p class="table__text table__text_subtext">Всемирный банк, 2017</p>
                     </div>
                     <div class="table__cell">
-                        <p class="heading">17-20 лет</p>
-                        <p class="text">Пик обучаемости</p>
+                        <p class="table__heading">17-20 лет</p>
+                        <p class="table__text">Пик обучаемости</p>
                     </div>
                     <div class="table__cell">
-                        <p class="heading">1885 год</p>
-                        <p class="text">Открытие кривой забывания</p>
+                        <p class="table__heading">1885 год</p>
+                        <p class="table__text">Открытие кривой забывания</p>
                     </div>
                     <div class="table__cell">
-                        <p class="heading">1889 год</p>
-                        <p class="text">Открытие условного рефлекса</p>
+                        <p class="table__heading">1889 год</p>
+                        <p class="table__text">Открытие условного рефлекса</p>
                     </div>
                 </div>
             </section>
@@ -98,103 +86,95 @@
             <section class="feinman">
                 <h1 class="feinman__title">Метод Фейнмана</h1>
                 <h2 class="feinman__subtitle">Выучить и не забыть.</h2>
-                <!-- ! Заменить стрелку на &#10230; это HTML код стрелки, все символы можно загуглить "html символы" -->
-                <a class="feinman__link" href="#">Подробнее →</a>
+                <a class="feinman__link" href="#">Подробнее &#10230</a>
             </section>
 
             <section class="kaufman">
-                <!-- ! Страдает БЭМ, не правильное применение модификатора, должно быть Б__Э Б__Э_М или Б Б_М -->
-                <h1 class="section-title__theme_dark">Принципы обучения</h1>
-                <h2 class="section-subtitle__theme_dark">от Джоша Кауфмана</h2>
-                <div class="table__theme_dark">
-                    <div class="table__cell_dark">
-                        <!-- ! Потерялся Блок, сейчас есть только __Э_м -->
-                        <p class="heading_dark">1</p>
-                        <!-- ! Потерялся Блок, сейчас есть только __Э_м -->
-                        <p class="text_dark">Выберите привлекательный проект.</p>
+                <h1 class="section-title section-title_theme_dark">Принципы обучения</h1>
+                <h2 class="section-subtitle section-subtitle_theme_dark">от Джоша Кауфмана</h2>
+                <div class="table table_theme_dark">
+                    <div class="table__cell_theme_dark">
+                        <p class="table__heading_theme_dark">1</p>
+                        <p class="table__text_theme_dark">Выберите привлекательный проект.</p>
                     </div>
-                    <div class="table__cell_dark">
-                        <!-- ! Потерялся Блок, сейчас есть только __Э_м и по списку дальше-->
-                        <p class="heading_dark">2</p>
-                        <p class="text_dark">Сосредоточьтесь на каком-то одном навыке.</p>
+                    <div class="table__cell_theme_dark">
+                        <p class="table__heading_theme_dark">2</p>
+                        <p class="table__text_theme_dark">Сосредоточьтесь на каком-то одном навыке.</p>
                     </div>
-                    <div class="table__cell_dark">
-                        <p class="heading_dark">3</p>
-                        <p class="text_dark">Определите целевой уровень мастерства.</p>
+                    <div class="table__cell_theme_dark">
+                        <p class="table__heading_theme_dark">3</p>
+                        <p class="table__text_theme_dark">Определите целевой уровень мастерства.</p>
                     </div>
-                    <div class="table__cell_dark">
-                        <p class="heading_dark">4</p>
-                        <p class="text_dark">Разбейте навык на элементы.</p>
+                    <div class="table__cell_theme_dark">
+                        <p class="table__heading_theme_dark">4</p>
+                        <p class="table__text_theme_dark">Разбейте навык на элементы.</p>
                     </div>
-                    <div class="table__cell_dark">
-                        <p class="heading_dark">5</p>
-                        <p class="text_dark">Приготовьте всё необходимое для занятий.
+                    <div class="table__cell_theme_dark">
+                        <p class="table__heading_theme_dark">5</p>
+                        <p class="table__text_theme_dark">Приготовьте всё необходимое для занятий.
                         </p>
                     </div>
-                    <div class="table__cell_dark">
-                        <p class="heading_dark">6</p>
-                        <p class="text_dark">Устраните препятствия для занятий.</p>
+                    <div class="table__cell_theme_dark">
+                        <p class="table__heading_theme_dark">6</p>
+                        <p class="table__text_theme_dark">Устраните препятствия для занятий.</p>
                     </div>
-                    <div class="table__cell_dark">
-                        <p class="heading_dark">7</p>
-                        <p class="text_dark">Выделите специальное время для занятий.</p>
+                    <div class="table__cell_theme_dark">
+                        <p class="table__heading_theme_dark">7</p>
+                        <p class="table__text_theme_dark">Выделите специальное время для занятий.</p>
                     </div>
-                    <div class="table__cell_dark">
-                        <p class="heading_dark">8</p>
-                        <p class="text_dark">Создайте быстрые петли обратной связи.</p>
+                    <div class="table__cell_theme_dark">
+                        <p class="table__heading_theme_dark">8</p>
+                        <p class="table__text_theme_dark">Создайте быстрые петли обратной связи.</p>
                     </div>
-                    <div class="table__cell_dark">
-                        <p class="heading_dark">9</p>
-                        <p class="text_dark">Занимайтесь по расписанию, короткими интенсивными интервалами.</p>
+                    <div class="table__cell_theme_dark">
+                        <p class="table__heading_theme_dark">9</p>
+                        <p class="table__text_theme_dark">Занимайтесь по расписанию, короткими интенсивными интервалами.</p>
                     </div>
-                    <div class="table__cell_dark">
-                        <p class="heading_dark">10</p>
-                        <p class="text_dark">Уделяйте внимание количеству и скорости.</p>
+                    <div class="table__cell_theme_dark">
+                        <p class="table__heading_theme_dark">10</p>
+                        <p class="table__text_theme_dark">Уделяйте внимание количеству и скорости.</p>
                     </div>
                 </div>
             </section>
         </main>
+
         <footer class="footer">
             <div class="footer__columns">
-                <div class="footer__logo footer__place_logo" href="#"> </div>
-
-                <div class="footer__author">&copy; 2021. Alex Port</div>
-
-                <div class="footer__column content_info">
+                
+                <div class="footer__column_content_copyright">
+                <div class="logo logo_place_footer" href="#"> </div>
+                <div class="footer__author">&copy; 2021. Alex Port</div></div>
+                <div class="footer__column_content_info">
                     <p class="footer__column-heading">О Практикуме</p>
                     <p class="footer__column-links">
-                        <!-- ! сломался БЭМ -->
-                    <ul class="ul">
-                        <a class="link_color" href="#">
-                            <li class="li_alt li">Главная</li>
+                    <ul class="footer__ul">
+                        <a class="footer__link_color" href="#">
+                            <li class="footer__li">Главная</li>
                         </a>
-                        <a class="link_color" href="#">
-                            <li class="li_alt li">Концепция</li>
+                        <a class="footer__link_color" href="#">
+                            <li class="footer__li">Концепция</li>
                         </a>
-                        <a class="link_color" href="#">
-                            <li class="li_alt li">Наставники</li>
+                        <a class="footer__link_color" href="#">
+                            <li class="footer__li">Наставники</li>
                         </a>
                     </ul>
                     </p>
                 </div>
-                <div class="footer__column content_social">
+                <div class="footer__column_content_social">
                     <p class="footer__column-heading">Соцсети</p>
-                    <p class="footer__column-social-icons">
-                        <!-- ! сломался БЭМ -->
-                    <ul class="ul_social">
-                        <a class="link_color" href="facebook.com">
-                            <li class="li_alt li_fb">Facebook</li></a>
-                        <a class=" link_color" href="vk.com">
-                            <li class="li_alt li_vk">Вконтакте</li>
+                    <p class="footer__social-icons">
+                    <ul class="footer__ul_social">
+                        <a class="footer__link_color" href="facebook.com">
+                            <li class="footer__li footer__li_fb">Facebook</li></a>
+                        <a class="footer__link_color" href="vk.com">
+                            <li class="footer__li footer__li_vk">Вконтакте</li>
                         </a>
-                        <a class="link_color" href="instagram.com">
-                            <li class="li_alt li_inst">Instagram</li>
+                        <a class="footer__link_color" href="instagram.com">
+                            <li class="footer__li footer__li_inst">Instagram</li>
                         </a>
                     </ul>
                     </p>
                 </div>
-                <!-- ! Лишние пробелы -->
-
             </div>
         </footer>
     </div>
