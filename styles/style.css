@@ -207,9 +207,6 @@ background-color: #f2f2f2;
     background-size: 877px;
     position: relative;
 }
-.kaufman:not(.kaufman__triangle) {
-    z-index: 2;
-}
 .kaufman__triangle {
     width:877px;
     height: 877px;
@@ -378,7 +375,6 @@ margin: 0 auto 80px auto;
 }
 .cards__title {
     margin: 0 auto;
-    align:center;
     font-size: 24px;
     line-height: 1.15;
     font-weight:bold;
