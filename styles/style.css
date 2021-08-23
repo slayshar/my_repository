@@ -480,3 +480,38 @@ margin-bottom: 316px
     padding-top:100px;
 
 }
+.resources__logo-zone {
+    width: 1100px;
+    margin: 80px auto 217px;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.logo_arzamas {
+    background: url(../images/logo/arzamas.svg) no-repeat;
+    left: 11px;
+    position: relative;
+
+}
+.logo_n1 {
+    background: url(../images/logo/n1.svg) no-repeat;
+    left: 90px;
+    position: relative;
+
+}
+.logo_strelka {
+    background: url(../images/logo/strelka.svg) no-repeat;
+    left: 39px;
+    position: relative;
+}
+.logo_polka {
+    background: url(../images/logo/polka.svg) no-repeat;
+    left: 43px;
+    position: relative;
+}
+.resources__logo {
+    background-size: contain;
+margin: 0 auto;
+height: 38px;
+width: 270px;
+justify-content: center;
+}
